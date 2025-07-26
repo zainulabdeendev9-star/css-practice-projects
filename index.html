@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css animation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            box-sizing:border-box;
+            background:linear-gradient(-45deg,rgb(124, 124, 124),white);
+            display:flex;
+            align-items: center;
+
+        }
+        .img-box img{
+            opacity:1;
+            
+            animation: entry 1s ease 0s 1;
+        }
+
+        @keyframes entry {
+            from{
+                opacity:0.2;
+                width:100px;
+                tranform: translate(0px);
+            }
+            to{
+                opacity:1;
+                width:100%;
+                tranform:translate(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-box">
+            <img src="https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-bicycle-mountain-bike-png-image_13223683.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
